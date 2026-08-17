@@ -1,0 +1,14 @@
+From Report to Patch, the OpenBSD Errata Process
+
+Embargoes create myth about security fixing.  In OpenBSD we have an
+errata process to provide source and binary patches for stable
+releases.  This requires a mixture of secrecy and fast acting.
+
+What are the requirements for a small team to build fixes?  Where
+is the line between security issues and regular bug fixes?  What
+effect does the number of increased AI reports have on this process?
+There is a CVE, will there be a fix?  How do companies with products
+based on OpenBSD interact?
+
+This talk will answer these questions and we may also collect
+interesting views from the audience.
