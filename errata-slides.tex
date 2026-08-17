@@ -68,21 +68,39 @@
 \end{itemize}
 \end{frame}
 
-\subsection{Workflow}
-\begin{frame}{Workflow}
-\begin{itemize}
-\item commit fix to current
-\item backport to patch files
-\item commit fix to stable branches
-\item sign patches
-\item build syspatch
-\item copy out
-\item commit errata html to www
-\item write announce mail
-\end{itemize}
+\subsection{Team Effort}
+\begin{frame}{Team Effort}
+\begin{tabular}{ll}
+commit fix to current		& developer			\\
+backport to patch files		& developer or bluhm@		\\
+commit fix to stable		& bluhm@			\\
+sign patches			& deraadt@			\\
+build syspatch			& robert@			\\
+copy out to ftp			& deraadt@			\\
+commit errata to www		& bluhm@			\\
+write announce mail		& bluhm@			\\
+\end{tabular}
+\end{frame}
+
+\subsection{3rd Party Embargo}
+\begin{frame}{3rd Party Embargo}
+\begin{tabular}{ll}
+report fix			& involved developer		\\
+set release date		& upstream			\\
+prepare patches, syspatch, www	& bluhm@ deraadt@ robert@	\\
+wait for upstream		& \dots				\\
+coordinated release		& upstream			\\
+commit fix to current		& developer			\\
+commit fix to stable		& bluhm@			\\
+copy out			& deraadt@			\\
+publish www and mail		& bluhm@			\\
+\end{tabular}
 \end{frame}
 
 \subsection{Application Binary Interface}
+\begin{frame}{Application Binary Interface}
+\item no changes to header files
+\end{frame}
 
 \subsection{Inflation}
 \begin{frame}{Inflation}
@@ -99,7 +117,9 @@
 \item UBSAN fuzzer
 \item fixed upstream
 \item someone issued CVE
+\item CVSS score 7.5
 \item fix has no binary diff
+\item CNA rejected CVE
 \end{itemize}
 \end{frame}
 
@@ -117,15 +137,30 @@
 \begin{frame}{TCP SACK}
 \begin{itemize}
 \item TCP SACK from Nicholas Carlini at Anthropic
+\item 24 year old bug, kernel crash
 \item TCP SACK hole list corruption one month later
+\item complete bullshit
 \end{itemize}
 \end{frame}
 
 \subsection{Triage}
+\begin{frame}{Triage}
+\begin{itemize}
+\item remote kernel exploit
+\item remote root exploit
+\item remote kernel crash
+\item remote user exploit
+\item remote deamon crash
+\item local root exploit
+\item local kernel crash
+\item kernel information leak
+\item some 3rd party CVE
+\end{itemize}
+\end{frame}
 
 \subsection{Bad Bug Report}
 \begin{frame}{Bad Bug Report}
-To: security@openbsd.org
+To: security@openbsd.org\\
 Subject: Security Vulnerability - Remotely Exploitable - High (CVSS 7.4)
 \begin{itemize}
 \item subject - bullshit
@@ -134,13 +169,18 @@ Subject: Security Vulnerability - Remotely Exploitable - High (CVSS 7.4)
 \end{itemize}
 \end{frame}
 
+\subsection{Bumsrakete}
+\begin{frame}{Bumsrakete}
+\begin{itemize}
+\item \url{https://bumsrake.de/}
+\item best bug report ever
+\end{itemize}
+\end{frame}
+
 \subsection{Links}
 \begin{frame}{Links}
 \begin{itemize}
-    \item http://bluhm.genua.de/test.html
-    \item http://bluhm.genua.de/perform/results/perform.html
-    \item http://bluhm.genua.de/netlink/results/latest.html
-    \item https://github.com/bluhm/talk-protomp
+    \item https://www.openbsd.org/errata79.html
 \end{itemize}
 \end{frame}
 
