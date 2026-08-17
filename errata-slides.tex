@@ -1,0 +1,117 @@
+% Copyright (c) 2026 Alexander Bluhm <bluhm@genua.de>
+%
+% Permission to use, copy, modify, and distribute this software for any
+% purpose with or without fee is hereby granted, provided that the above
+% copyright notice and this permission notice appear in all copies.
+%
+% THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+% WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+% MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+% ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+% WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+% ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+% OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+\documentclass[14pt,aspectratio=169]{beamer}
+\usetheme{Frankfurt}
+\usepackage{tikz}
+\usepackage{framed}
+\usepackage{adjustbox}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{varwidth}
+\usepackage{tipa}
+\usepackage{alltt}
+\usepackage{xcolor}
+\usepackage{upquote}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{calc}
+\usetikzlibrary{shapes.arrows}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{shapes.multipart}
+\usetikzlibrary{shapes.symbols}
+
+\author{Alexander Bluhm}
+\title{Report to Patch, the OpenBSD Errata Process}
+\institute{bluhm@openbsd.org}
+\date{EuroBSDCon, September 2026}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Agenda}
+\setcounter{tocdepth}{1}
+\tableofcontents
+\end{frame}
+
+\subsection{Policy}
+\begin{frame}{Policy}
+\begin{itemize}
+\item src and xenocara errata patches, 2 releases
+\item syspatches for amd64, arm64, i386
+\item port updates, 1 release
+\item stable packages for amd64, i386
+\end{itemize}
+\end{frame}
+
+\subsection{Artifacts}
+\begin{frame}{Artifacts}
+\begin{itemize}
+\item commit fix to current
+\item backport to patch files
+\item commit fix to stable branches
+\item sign patches
+\item build syspatch
+\item commit errata.html to www
+\item write announce mail
+\end{itemize}
+\end{frame}
+
+\subsection{Application Binary Interface}
+
+\subsection{Inflation}
+\begin{frame}{Inflation}
+\begin{itemize}
+\item awareness
+\item regulation
+\item curriculum vitae enhancer (CVE)
+\end{itemize}
+\end{frame}
+
+\subsection{Revoke CVE...}
+
+\subsection{Artificial Intelligence}
+\begin{frame}{Artificial Intelligence}
+\begin{itemize}
+\item{sophisticated}
+\item{sloop}
+\item{professional researcher}
+\item{dude from the internet}
+\end{itemize}
+\end{frame}
+
+\subsection{TCP SACK}
+\begin{frame}{TCP SACK}
+\begin{itemize}
+\item TCP SACK from Nicholas Carlini at Anthropic
+\item TCP SACK hole list corruption one month later
+\end{itemize}
+\end{frame}
+
+\subsection{Triage}
+
+\subsection{Links}
+\begin{frame}{Links}
+\begin{itemize}
+    \item http://bluhm.genua.de/test.html
+    \item http://bluhm.genua.de/perform/results/perform.html
+    \item http://bluhm.genua.de/netlink/results/latest.html
+    \item https://github.com/bluhm/talk-protomp
+\end{itemize}
+\end{frame}
+
+\end{document}
