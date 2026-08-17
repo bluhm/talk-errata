@@ -58,15 +58,26 @@
 \end{itemize}
 \end{frame}
 
-\subsection{Artifacts}
-\begin{frame}{Artifacts}
+\subsection{Artefacts}
+\begin{frame}{Artefacts}
+\begin{itemize}
+\item signed errata patch files
+\item binary syspatch
+\item errata html
+\item announce mail
+\end{itemize}
+\end{frame}
+
+\subsection{Workflow}
+\begin{frame}{Workflow}
 \begin{itemize}
 \item commit fix to current
 \item backport to patch files
 \item commit fix to stable branches
 \item sign patches
 \item build syspatch
-\item commit errata.html to www
+\item copy out
+\item commit errata html to www
 \item write announce mail
 \end{itemize}
 \end{frame}
@@ -82,15 +93,23 @@
 \end{itemize}
 \end{frame}
 
-\subsection{Revoke CVE...}
+\subsection{Revoke Freetype CVE-2023-2004}
+\begin{frame}{Revoke Freetype CVE-2023-2004}
+\begin{itemize}
+\item UBSAN fuzzer
+\item fixed upstream
+\item someone issued CVE
+\item fix has no binary diff
+\end{itemize}
+\end{frame}
 
 \subsection{Artificial Intelligence}
 \begin{frame}{Artificial Intelligence}
 \begin{itemize}
-\item{sophisticated}
-\item{sloop}
-\item{professional researcher}
-\item{dude from the internet}
+\item sophisticated
+\item AI slop
+\item professional researcher
+\item dude from the internet
 \end{itemize}
 \end{frame}
 
@@ -103,6 +122,17 @@
 \end{frame}
 
 \subsection{Triage}
+
+\subsection{Bad Bug Report}
+\begin{frame}{Bad Bug Report}
+To: security@openbsd.org
+Subject: Security Vulnerability - Remotely Exploitable - High (CVSS 7.4)
+\begin{itemize}
+\item subject - bullshit
+\item mail body - no facts, just exaggeration
+\item kbug\_openbsd.md - has a point hidden in AI slop
+\end{itemize}
+\end{frame}
 
 \subsection{Links}
 \begin{frame}{Links}
