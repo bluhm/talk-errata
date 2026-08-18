@@ -87,10 +87,10 @@ write announce mail		& bluhm@			\\
 \end{tabular}
 \end{frame}
 
-\subsection{3rd Party Embargo}
-\begin{frame}{3rd Party Embargo}
+\subsection{Third-party Embargo}
+\begin{frame}{Third-party Embargo}
 \begin{tabular}{ll}
-report fix			& involved developer		\\
+receive report			& involved developer		\\
 set release date		& upstream			\\
 prepare patches, syspatch, www	& bluhm@ deraadt@ robert@	\\
 wait for upstream		& \dots				\\
@@ -138,10 +138,10 @@ publish www and mail		& bluhm@			\\
 \begin{itemize}
 \item UBSAN fuzzer
 \item fixed upstream
-\item someone issued CVE
+\item CVE issued
 \item CVSS score 7.5
 \item fix has no binary diff
-\item CNA rejected CVE
+\item CVE rejected by CNA
 \end{itemize}
 \end{frame}
 
@@ -176,7 +176,7 @@ publish www and mail		& bluhm@			\\
 \item local root exploit
 \item local kernel crash
 \item kernel information leak
-\item some 3rd party CVE
+\item some third-party CVE
 \end{itemize}
 \end{frame}
 
@@ -193,17 +193,18 @@ publish www and mail		& bluhm@			\\
 
 \subsection{Bad Bug Report}
 \begin{frame}{Bad Bug Report}
-To: security@openbsd.org\\
-Subject: Security Vulnerability - Remotely Exploitable - High (CVSS 7.4)
+\texttt{To: security@openbsd.org}\\
+\texttt{Subject:
+    Security Vulnerability - Remotely Exploitable - High (CVSS 7.4)}
 \begin{itemize}
-\item subject - bullshit
-\item mail body - no facts, just exaggeration
-\item \texttt{kbug\_openbsd.md} - has a point hidden in AI slop
+\item subject --- bullshit
+\item mail body --- no facts, just exaggeration
+\item \texttt{kbug\_openbsd.md} --- has a point hidden in AI slop
 \end{itemize}
 \end{frame}
 
-\subsection{Bumsrakete}
-\begin{frame}{Bumsrakete}
+\subsection{Bumsrake}
+\begin{frame}{Bumsrake}
 \begin{itemize}
 \item \url{https://bumsrake.de/}
 \item best bug report ever
