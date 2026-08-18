@@ -22,6 +22,7 @@
 \usepackage{varwidth}
 \usepackage{tipa}
 \usepackage{alltt}
+\usepackage{amssymb}
 \usepackage{xcolor}
 \usepackage{upquote}
 \usepackage[T1]{fontenc}
@@ -48,6 +49,8 @@
 \tableofcontents
 \end{frame}
 
+\section{Process}
+
 \subsection{Policy}
 \begin{frame}{Policy}
 \begin{itemize}
@@ -60,16 +63,34 @@
 
 \subsection{Artefacts}
 \begin{frame}{Artefacts}
-\begin{itemize}
-\item signed errata patch files
-\item binary syspatch
-\item errata html
-\item announce mail
-\end{itemize}
+\begin{tabular}{l|cccc}
+		& src		& xenocara	& ports		& signify    \\
+\hline
+releases	& 2		& 2		& 1		&	     \\
+cvs stable	& \checkmark	& \checkmark	& \checkmark	&	     \\
+errata patches	& \checkmark	& \checkmark	&		& \checkmark \\
+binary syspatch	& \checkmark	& \checkmark	&		& \checkmark \\
+errata html	& \checkmark	& \checkmark	&		&	     \\
+announce mail	& \checkmark	& \checkmark	&		&	     \\
+packages stable	&		&		& \checkmark	& \checkmark \\
+\end{tabular}
 \end{frame}
 
 \subsection{Team Effort}
 \begin{frame}{Team Effort}
+errata@openbsd.org
+\begin{itemize}
+\item deraadt@
+\item bluhm@
+\item robert@
+\item tb@
+\item mlarkin@
+\item millert@
+\end{itemize}
+\end{frame}
+
+\subsection{Workflow}
+\begin{frame}{Workflow}
 \begin{tabular}{ll}
 commit fix to current		& developer			\\
 backport to patch files		& developer or bluhm@		\\
@@ -101,7 +122,7 @@ publish www and mail		& bluhm@			\\
 \begin{frame}{Application Binary Interface}
 \begin{itemize}
 \item library API and ABI constant
-\item no changes to header files
+\item no changes to installed header files
 \item function prototypes
 \item data structs
 \item /usr/src/lib/check\_sym
@@ -116,6 +137,8 @@ publish www and mail		& bluhm@			\\
 \item /usr/src/sbin/unwind copies libunbound
 \end{itemize}
 \end{frame}
+
+\section{Ecosystem}
 
 \subsection{Inflation}
 \begin{frame}{Inflation}
@@ -173,6 +196,17 @@ publish www and mail		& bluhm@			\\
 \end{itemize}
 \end{frame}
 
+\subsection{Rating}
+\begin{frame}{Rating}
+\begin{itemize}
+\item depends on environment
+\item fixing easier than analyze
+\item judge exploitabiliy
+\item defense in depth
+\item risk of breakage
+\end{itemize}
+\end{frame}
+
 \subsection{Bad Bug Report}
 \begin{frame}{Bad Bug Report}
 To: security@openbsd.org\\
@@ -191,6 +225,8 @@ Subject: Security Vulnerability - Remotely Exploitable - High (CVSS 7.4)
 \item best bug report ever
 \end{itemize}
 \end{frame}
+
+\section{Discussion}
 
 \subsection{Links}
 \begin{frame}{Links}
