@@ -38,9 +38,9 @@
 \subsection{Policy}
 \begin{frame}{Policy}
 \begin{itemize}
-\item src and xenocara errata patches, 2 releases
+\item src and xenocara errata patches
 \item syspatches for amd64, arm64, i386
-\item port updates, 1 release
+\item port updates
 \item stable packages for amd64, i386
 \end{itemize}
 \end{frame}
@@ -56,7 +56,7 @@ errata patches	& \checkmark	& \checkmark	&		& \checkmark \\
 binary syspatch	& \checkmark	& \checkmark	&		& \checkmark \\
 errata html	& \checkmark	& \checkmark	&		&	     \\
 announce mail	& \checkmark	& \checkmark	&		&	     \\
-packages stable	&		&		& \checkmark	& \checkmark \\
+stable packages	&		&		& \checkmark	& \checkmark \\
 \end{tabular}
 \end{frame}
 
@@ -92,7 +92,7 @@ write announce mail		& bluhm@			\\
 \begin{tabular}{ll}
 receive report			& involved developer		\\
 set release date		& upstream			\\
-prepare patches, syspatch, www	& bluhm@ deraadt@ robert@	\\
+prepare patches syspatch www	& bluhm@ deraadt@ robert@	\\
 wait for upstream		& \dots				\\
 coordinated release		& upstream			\\
 commit fix to current		& developer			\\
@@ -157,9 +157,13 @@ publish www and mail		& bluhm@			\\
 
 \subsection{TCP SACK}
 \begin{frame}{TCP SACK}
+Good
 \begin{itemize}
 \item TCP SACK from Nicholas Carlini at Anthropic
 \item 24 year old bug, kernel crash
+\end{itemize}
+Bad
+\begin{itemize}
 \item TCP SACK hole list corruption one month later
 \item complete bullshit
 \end{itemize}
@@ -207,11 +211,21 @@ publish www and mail		& bluhm@			\\
 \begin{frame}{Bumsrake}
 \begin{itemize}
 \item \url{https://bumsrake.de/}
-\item best bug report ever
+\item funniest bug report ever
 \end{itemize}
 \end{frame}
 
 \section{Discussion}
+
+\section{Questions}
+\begin{frame}{Questions}
+\begin{itemize}
+\item Where to draw the line?
+\item Features, bug fixes, backports?
+\item Stability, speed, completeness?
+\item Will AI solve it?
+\end{itemize}
+\end{frame}
 
 \subsection{Links}
 \begin{frame}{Links}
