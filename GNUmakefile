@@ -1,3 +1,11 @@
+NAME =	errata-slides
+
 all:
-	pdflatex errata-slides
-	pdflatex errata-slides
+	pdflatex $(NAME)
+	pdflatex $(NAME)
+
+clean:
+	rm -f $(NAME).aux $(NAME).log $(NAME).nav $(NAME).out $(NAME).pdf \
+	    $(NAME).snm $(NAME).toc $(NAME).vrb
+
+.PHONY: all clean
