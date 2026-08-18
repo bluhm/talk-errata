@@ -14,24 +14,8 @@
 
 \documentclass[14pt,aspectratio=169]{beamer}
 \usetheme{Frankfurt}
-\usepackage{tikz}
-\usepackage{framed}
-\usepackage{adjustbox}
-\usepackage{graphicx}
-\usepackage{grffile}
-\usepackage{varwidth}
-\usepackage{tipa}
-\usepackage{alltt}
 \usepackage{amssymb}
-\usepackage{xcolor}
-\usepackage{upquote}
 \usepackage[T1]{fontenc}
-\usepackage{textcomp}
-\usepackage{calc}
-\usetikzlibrary{shapes.arrows}
-\usetikzlibrary{shapes.geometric}
-\usetikzlibrary{shapes.multipart}
-\usetikzlibrary{shapes.symbols}
 
 \author{Alexander Bluhm}
 \title{From Report to Patch, the OpenBSD Errata Process}
@@ -45,8 +29,7 @@
 \end{frame}
 
 \begin{frame}{Agenda}
-\setcounter{tocdepth}{1}
-\tableofcontents
+\tableofcontents[hideallsubsections]
 \end{frame}
 
 \section{Process}
@@ -125,7 +108,7 @@ publish www and mail		& bluhm@			\\
 \item no changes to installed header files
 \item function prototypes
 \item data structs
-\item /usr/src/lib/check\_sym
+\item \texttt{/usr/src/lib/check\_sym}
 \item avoid C++
 \end{itemize}
 \end{frame}
@@ -133,8 +116,8 @@ publish www and mail		& bluhm@			\\
 \subsection{Hidden Dependencies}
 \begin{frame}{Hidden Dependencies}
 \begin{itemize}
-\item statically linked /bin and /sbin
-\item /usr/src/sbin/unwind copies libunbound
+\item statically linked \texttt{/bin} and \texttt{/sbin}
+\item \texttt{/usr/src/sbin/unwind} copies libunbound
 \end{itemize}
 \end{frame}
 
@@ -214,7 +197,7 @@ Subject: Security Vulnerability - Remotely Exploitable - High (CVSS 7.4)
 \begin{itemize}
 \item subject - bullshit
 \item mail body - no facts, just exaggeration
-\item kbug\_openbsd.md - has a point hidden in AI slop
+\item \texttt{kbug\_openbsd.md} - has a point hidden in AI slop
 \end{itemize}
 \end{frame}
 
@@ -231,7 +214,7 @@ Subject: Security Vulnerability - Remotely Exploitable - High (CVSS 7.4)
 \subsection{Links}
 \begin{frame}{Links}
 \begin{itemize}
-    \item https://www.openbsd.org/errata79.html
+\item \url{https://www.openbsd.org/errata79.html}
 \end{itemize}
 \end{frame}
 
