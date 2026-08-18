@@ -99,7 +99,22 @@ publish www and mail		& bluhm@			\\
 
 \subsection{Application Binary Interface}
 \begin{frame}{Application Binary Interface}
+\begin{itemize}
+\item library API and ABI constant
 \item no changes to header files
+\item function prototypes
+\item data structs
+\item /usr/src/lib/check\_sym
+\item avoid C++
+\end{itemize}
+\end{frame}
+
+\subsection{Hidden Depenencies}
+\begin{frame}{Hidden Depenencies}
+\begin{itemize}
+\item statically linked /bin and /sbin
+\item /usr/src/sbin/unwind copies libunbound
+\end{itemize}
 \end{frame}
 
 \subsection{Inflation}
