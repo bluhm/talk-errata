@@ -26,5 +26,5 @@ jobs:
     - name: Upload PDF
       uses: actions/upload-artifact@v4
       with:
-        name: protomp-slides
-        path: protomp-slides.pdf
+        name: errata-slides
+        path: errata-slides.pdf
