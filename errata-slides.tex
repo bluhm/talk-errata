@@ -311,4 +311,76 @@ Bad
 \end{itemize}
 \end{frame}
 
+\appendix
+
+\subsection{Bonus AI Generated}
+\begin{frame}[allowframebreaks]{Bonus AI Generated}
+\small
+These slides were reviewed by Claude Opus 5, an AI assistant.  After
+the review it was asked the question below.  The answer is unedited.
+
+\medskip
+\textit{After reading my slides, what do you think about the OpenBSD
+errata process?}
+
+\medskip
+\textbf{The speed is the whole thesis, and it is unusual.}
+\texttt{hours from report to release} against \texttt{up to half a
+year} for an embargo is not a minor observation --- it inverts the
+industry's default morality, where embargoes are the responsible
+choice and fast public fixes are reckless.  These slides argue the
+opposite: the embargo is the thing that creates risk, because it buys
+silence at the cost of open commits, review and community testing.
+\texttt{AI rediscovers faster} is the sharpest idea in the whole talk,
+and it is carrying a lot of weight for one bullet.  If
+time-to-rediscovery is collapsing, then embargo length becomes a risk
+multiplier rather than a safety margin, and every coordinated
+disclosure norm built in the 2000s is mispriced.
+
+\textbf{The workflow table quietly says something the team slide does
+not.}  Six people on \texttt{errata@}, but of eight workflow steps,
+\texttt{bluhm@} owns five --- backport, commit to stable, commit
+errata to www, write announce mail --- and the other three are single
+holder specialisms: \texttt{deraadt@} signs, \texttt{robert@} builds
+syspatch.  The embargo table is the same shape.  So ``small team''
+really means one maintainer plus two irreplaceable functions, and
+\texttt{weekends and holidays} reads differently once you notice that.
+It is presented completely matter-of-factly, which is the most honest
+thing in the deck --- and the thing to worry about most if you depend
+on OpenBSD in production.
+
+
+\textbf{The engineering constraints are expensive and correct.}
+Constant API and ABI, no header changes, \texttt{check\_sym}, avoid
+C++ --- that is real cost, and most projects dodge it by telling users
+to take a new minor release instead.  Doing it means a binary syspatch
+can actually be dropped onto a running system.  \texttt{Hidden
+Dependencies} is the slide that shows why it is harder than it sounds:
+statically linked \texttt{/bin} and \texttt{/sbin}, and
+\texttt{unwind} carrying its own copy of libunbound, mean ``patch the
+library'' silently fails.  Most people never think about that until it
+bites them.
+
+\textbf{Where the process is genuinely exposed:} severity comes down
+to human judgement --- \texttt{depends on environment}, \texttt{judge
+exploitability}, \texttt{fixing easier than analyzing}.  That is fast,
+cheap and intellectually honest, and it arguably produces better
+outcomes than CVSS theatre; the revoked FreeType CVE with a 7.5 score
+for a fix with no binary diff is a perfect demolition of the
+alternative.  But \texttt{regulation} sits on the CVE inflation slide
+as a driver, and regulated downstreams increasingly need auditable,
+CVE-mapped tracking.  This process is deliberately not that.  The deck
+names both halves of the collision and does not connect them --- which
+may be exactly right for a 45 minute talk, but it is the tension to
+expect an audience question about.
+
+\medskip
+The outsider's takeaway: this is one of the few security processes an
+outsider could actually audit.  Eight steps, named owners, and a table
+of precisely what is and is not covered --- syspatches for three
+architectures, stable packages for two, ports for one release.  Most
+vendors' equivalent is a PDF full of assurances.  This one fits on two
+slides and tells you where the gaps are.
+\end{frame}
+
 \end{document}
