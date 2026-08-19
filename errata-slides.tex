@@ -87,6 +87,32 @@ errata@openbsd.org
 \end{itemize}
 \end{frame}
 
+\subsection{Triage Categories}
+\begin{frame}{Triage Categories}
+\begin{itemize}
+\item remote kernel exploit
+\item remote root exploit
+\item remote kernel crash
+\item remote user exploit
+\item remote daemon crash
+\item local root exploit
+\item local kernel crash
+\item kernel information leak
+\item some third-party CVE
+\end{itemize}
+\end{frame}
+
+\subsection{Severity Rating}
+\begin{frame}{Severity Rating}
+\begin{itemize}
+\item depends on environment
+\item fixing easier than analyzing
+\item judge exploitability
+\item defense in depth
+\item risk of breakage
+\end{itemize}
+\end{frame}
+
 \subsection{Workflow}
 \begin{frame}{Workflow}
 \centering
@@ -137,32 +163,6 @@ publish www and mail		& bluhm@			\\
 \begin{itemize}
 \item statically linked \texttt{/bin} and \texttt{/sbin}
 \item \texttt{/usr/src/sbin/unwind} copies libunbound
-\end{itemize}
-\end{frame}
-
-\subsection{Triage Categories}
-\begin{frame}{Triage Categories}
-\begin{itemize}
-\item remote kernel exploit
-\item remote root exploit
-\item remote kernel crash
-\item remote user exploit
-\item remote daemon crash
-\item local root exploit
-\item local kernel crash
-\item kernel information leak
-\item some third-party CVE
-\end{itemize}
-\end{frame}
-
-\subsection{Severity Rating}
-\begin{frame}{Severity Rating}
-\begin{itemize}
-\item depends on environment
-\item fixing easier than analyzing
-\item judge exploitability
-\item defense in depth
-\item risk of breakage
 \end{itemize}
 \end{frame}
 
